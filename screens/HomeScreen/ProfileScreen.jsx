@@ -256,7 +256,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: Colors.mainTextColor,
     fontSize: 30,
-    fontWeight: 500,
+    // fontWeight: 500,
     marginTop: 92,
     marginBottom: 33,
   },

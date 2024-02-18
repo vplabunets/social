@@ -112,12 +112,14 @@ const styles = StyleSheet.create({
     height: 60,
     borderRadius: 16,
     marginRight: 8,
+    borderWidth: 1,
+    borderColor: Colors.placeholderTextColor,
   },
   userNameEmailContainer: {},
   userName: {
     color: Colors.mainTextColor,
     fontSize: 13,
-    fontWeight: 700,
+    // fontWeight: 700,
   },
   userEmail: {
     color: '#212121CC',

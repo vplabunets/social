@@ -66,15 +66,29 @@ const CreatePostsScreen = ({ navigation }) => {
 
     if (!result.canceled) {
       setPhoto(result.assets[0].uri);
+      setLocation({
+        coords: {
+          accuracy: 600,
+          altitude: 0,
+          altitudeAccuracy: 0,
+          heading: 0,
+          latitude: 37.4220936,
+          longitude: -122.083922,
+          speed: 0,
+        },
+        mocked: false,
+        timestamp: 1708261297989,
+      });
     }
   };
 
   async function takePhoto() {
+    console.log('hello');
     if (cameraRef.current) {
       try {
         const { uri } = await cameraRef.current.takePictureAsync();
         setPhoto(uri);
-        let location = await Location.getCurrentPositionAsync({});
+        let location = await Location.getCurrentPositionAsync();
         setLocation(location);
       } catch (error) {
         console.error('Error taking photo:', error);
@@ -83,12 +97,16 @@ const CreatePostsScreen = ({ navigation }) => {
   }
 
   async function sendPost() {
-    const photo = await uploadPhotoToServer();
-    setIsShowKeyboard(false);
-    Keyboard.dismiss();
-    navigation.navigate('DefaultScreen');
-    await upLoadPostToServer(title, locality, location, photo, name, userId);
-    deletePost();
+    if (photo && title && locality) {
+      const photo = await uploadPhotoToServer();
+      setIsShowKeyboard(false);
+      Keyboard.dismiss();
+      navigation.navigate('DefaultScreen');
+      await upLoadPostToServer(title, locality, location, photo, name, userId);
+      deletePost();
+    } else {
+      console.log('Error');
+    }
   }
 
   async function upLoadPostToServer(
