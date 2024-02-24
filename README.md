@@ -80,13 +80,13 @@ Once logged in, users have access to the following private screens:
 
   ##### Comments Screen
 
-  - Displays all comments of post, and give possibility to add new comment
-    ![Image 1](/src/assets/CommetntsScreen.gif)
+- Displays all comments of post, and give possibility to add new comment
+  ![Image 1](/src/assets/CommetntsScreen.gif)
 
   ##### Map Screen
 
-  - Displays map with place where photo was taken
-  - ![Image 1](/src/assets/MapScreen.gif)
+- Displays map with place where photo was taken
+  ![Image 1](/src/assets/MapScreen.gif)
 
 #### Create new post Screen:
 
