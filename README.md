@@ -76,22 +76,26 @@ Once logged in, users have access to the following private screens:
 
 - Displays memories (photos) of all users and Post Screen. From Posts Screen
   user can go to Comments screen or Map Screen
-  ![Image 1](/src/assets/DefaultScreen.png)
 
-  ##### Comments Screen
+![Image 1](/src/assets/DefaultScreen.png)
+
+##### Comments Screen
 
 - Displays all comments of post, and give possibility to add new comment
-  ![Image 1](/src/assets/CommetntsScreen.gif)
 
-  ##### Map Screen
+![Image 1](/src/assets/CommetntsScreen.gif)
+
+##### Map Screen
 
 - Displays map with place where photo was taken
-  ![Image 1](/src/assets/MapScreen.gif)
+
+![Image 1](/src/assets/MapScreen.gif)
 
 #### Create new post Screen:
 
 - Create new post: Allows users to create new posts.
-  ![Image 1](/src/assets/CreatePostScreen.gif)
+
+![Image 1](/src/assets/CreatePostScreen.gif)
 
 #### Profile Screen:
 
