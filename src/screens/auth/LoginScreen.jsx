@@ -135,7 +135,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: Colors.mainTextColor,
     fontSize: 30,
-    // fontWeight: 500,
+    fontWeight: 'bold',
     marginBottom: 33,
   },
   input: {
@@ -183,6 +183,6 @@ const styles = StyleSheet.create({
   toRegistrationButtonText: {
     color: Colors.blueTextColor,
     fontSize: 16,
-    // fontWeight: 700,
+    fontWeight: 'bold',
   },
 });

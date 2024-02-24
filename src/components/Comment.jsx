@@ -86,7 +86,6 @@ const styles = StyleSheet.create({
     marginVertical: 8,
     color: Colors.mainTextColor,
     fontSize: 16,
-    // fontWeight: 500,
   },
   postInfoContainer: {
     flexDirection: 'row',

@@ -83,7 +83,6 @@ const CreatePostsScreen = ({ navigation }) => {
   };
 
   async function takePhoto() {
-    console.log('hello');
     if (cameraRef.current) {
       try {
         const { uri } = await cameraRef.current.takePictureAsync();

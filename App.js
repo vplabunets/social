@@ -3,14 +3,14 @@ import React, { useEffect } from 'react';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 import { Provider } from 'react-redux';
-import { store } from './redux/store';
-import Main from './components/main.js';
+import { store } from './src/redux/store';
+import Main from './src/components/main.js';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
-    'roboto-regular': require('./assets/fonts/Roboto-Regular.ttf'),
-    'roboto-bold': require('./assets/fonts/Roboto-Bold.ttf'),
-    'bungeespice-regular': require('./assets/fonts/BungeeSpice-Regular.ttf'),
+    'roboto-regular': require('./src/assets/fonts/Roboto-Regular.ttf'),
+    'roboto-bold': require('./src/assets/fonts/Roboto-Bold.ttf'),
+    'bungeespice-regular': require('./src/assets/fonts/BungeeSpice-Regular.ttf'),
   });
 
   useEffect(() => {

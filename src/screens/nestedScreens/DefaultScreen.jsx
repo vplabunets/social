@@ -8,7 +8,9 @@ import {
   Image,
   TouchableOpacity,
 } from 'react-native';
+
 import Post from '../../components/Post';
+
 import { Colors } from '../../constants/colors';
 import { useSelector } from 'react-redux';
 import {

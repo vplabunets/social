@@ -1,12 +1,11 @@
 import { initializeApp } from 'firebase/app';
 import { initializeAuth, getReactNativePersistence } from 'firebase/auth';
-import {} from 'firebase/storage';
 import { getFirestore } from 'firebase/firestore';
 
 import ReactNativeAsyncStorage from '@react-native-async-storage/async-storage';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyC3B5RpzIbnEdf9xGoL_PPeGzn-8Qy0ZWI',
+  apiKey: process.env.EXPO_PUBLIC_API_KEY,
   authDomain: 'vpl-social-7722b.firebaseapp.com',
   projectId: 'vpl-social-7722b',
   storageBucket: 'vpl-social-7722b.appspot.com',

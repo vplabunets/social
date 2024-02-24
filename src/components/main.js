@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { useSelector, useDispatch } from 'react-redux';
 
-import { useRouter } from '../router';
+import { useRouter } from '../../router';
 import { authStateChangeUser } from '../redux/auth/authOperations';
 
 const Main = () => {

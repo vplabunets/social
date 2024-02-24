@@ -35,7 +35,6 @@ export const authSignUpUser =
     try {
       await createUserWithEmailAndPassword(auth, email, password);
 
-      console.log('auth.currentUser', auth.currentUser);
       const { uid, displayName } = await auth.currentUser;
       let processedPhoto = '';
       if (userPhoto) {

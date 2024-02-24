@@ -269,7 +269,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: Colors.mainTextColor,
     fontSize: 30,
-    // fontWeight: 500,
+    fontWeight: 'bold',
     marginTop: 92,
     marginBottom: 33,
   },
@@ -318,6 +318,6 @@ const styles = StyleSheet.create({
   toLoginButtonText: {
     color: Colors.blueTextColor,
     fontSize: 16,
-    // fontWeight: 700,
+    fontWeight: 'bold',
   },
 });
